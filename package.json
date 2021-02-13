@@ -14,7 +14,7 @@
     "show:dist": "live-server dist"
   },
   "author": "Chekhonina Natalia",
-  "license": "",
+  "license": "ISC",
   "devDependencies": {
     "@babel/cli": "^7.12.13",
     "@babel/core": "^7.12.13",
@@ -38,5 +38,13 @@
   "dependencies": {
     "core-js": "^3.8.3"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pfzw90/oop-homework.git"
+  },
+  "bugs": {
+    "url": "https://github.com/pfzw90/oop-homework/issues"
+  },
+  "homepage": "https://github.com/pfzw90/oop-homework#readme",
   "description": ""
 }

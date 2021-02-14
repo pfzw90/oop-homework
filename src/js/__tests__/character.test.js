@@ -11,6 +11,9 @@ test('taking damage', () => {
   testChar.damage(10);
   expect(testChar.health).toEqual(100 - 10 * (1 - testChar.defence / 100));
 
+  testChar.damage((testChar.health + 1) / (1 - testChar.defence / 100));
+  expect(testChar.health).toEqual(0);
+
   testChar.health = -1;
   expect(() => testChar.damage(1)).toThrowError(new Error('Потыкайте его палочкой. Он по поху уже сдох.'));
 });

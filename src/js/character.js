@@ -18,6 +18,9 @@ export default class Character {
 
   damage(points) {
     if (this.health < 0) throw new Error('Потыкайте его палочкой. Он по поху уже сдох.');
-    this.health -= points * (1 - this.defence / 100);
+
+    const dmg = points * (1 - this.defence / 100);
+    if (this.health > dmg) this.health -= dmg;
+    else this.health = 0;
   }
 }
